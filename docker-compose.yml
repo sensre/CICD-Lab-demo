@@ -1,8 +1,8 @@
 version: '2'
 services:
-  mobycounter:
-    container_name: mobycounter
-    image: mobycounter
+  sencounter:
+    container_name: sencounter
+    image: sencounter
     links:
       - "redis:redis"
     ports: 
