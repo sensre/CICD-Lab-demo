@@ -1,6 +1,6 @@
 node {
   stage 'Checkout'
-  git url: 'https://github.com/sensre/jenkins-docker-example.git'
+  git url: 'https://github.com/sensre/CICD-demo.git'
 
   stage 'build'
   docker.build('sencounter')
