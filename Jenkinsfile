@@ -1,9 +1,9 @@
 node {
   stage 'Checkout'
-  git url: 'https://github.com/russmckendrick/jenkins-docker-example.git'
+  git url: 'https://github.com/sensre/jenkins-docker-example.git'
 
   stage 'build'
-  docker.build('mobycounter')
+  docker.build('sencounter')
 
   stage 'deploy'
   sh './deploy.sh'
