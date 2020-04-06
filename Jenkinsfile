@@ -1,3 +1,4 @@
+properties([pipelineTriggers([githubPush()])])
 node {
   stage 'Checkout'
   git url: 'https://github.com/sensre/CICD-demo.git'
